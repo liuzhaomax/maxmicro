@@ -3,6 +3,7 @@ pjName='micro'
 pjGitName='maxmicro'
 
 if [ ! -d "www/${pjGitName}" ]; then
+    git branch --set-upstream-to=origin/master master
     echo 'git clone'
     # shellcheck disable=SC2164
     cd www
@@ -10,6 +11,7 @@ if [ ! -d "www/${pjGitName}" ]; then
     # shellcheck disable=SC2164
     cd ${pjGitName}
 else
+    git branch --set-upstream-to=origin/master master
     echo 'git pull'
     # shellcheck disable=SC2164
     cd www/${pjGitName}
