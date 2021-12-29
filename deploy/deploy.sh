@@ -22,5 +22,7 @@ docker stop ${pjName}
 docker rm -f ${pjName}
 docker rmi -f ${pjName}-i
 
+cd deploy
+
 docker build -t ${pjName}-i .
 docker run --name=${pjName} -d --restart=always --privileged=true --network my_net -p 8000:8000 -v /home/liuzhaomax1/ftp/static:/usr/src/app/static ${pjName}-i
