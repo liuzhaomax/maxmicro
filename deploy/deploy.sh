@@ -6,7 +6,7 @@ if [ ! -d "www/${pjGitName}" ]; then
     echo 'git clone'
     # shellcheck disable=SC2164
     cd www
-    git clone https://liuzhaomax@github.com/liuzhaomax/${pjGitName}.git
+    git clone https://github.com/liuzhaomax/${pjGitName}.git
     # shellcheck disable=SC2164
     cd ${pjGitName}
 else

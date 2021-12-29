@@ -16,5 +16,5 @@ http.createServer((req, res) => {
     proc.stderr.pipe(process.stderr)
     res.end('deploy maxmicro')
 }).listen(4000, () => {
-    console.log('deploy be running on 4000')
+    console.log('deploy maxmicro running on 4000')
 })
