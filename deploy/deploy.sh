@@ -1,5 +1,5 @@
 #! /bin/sh
-pjName='maxmicro'
+pjName='micro'
 pjGitName='maxmicro'
 
 if [ ! -d "www/${pjGitName}" ]; then
