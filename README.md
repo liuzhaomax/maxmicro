@@ -1,3 +1,3 @@
 # MaxMicro
 
-TechStack: go-micro + gin + go-wire + gorm
+TechStack: go-micro + gin + go-wire + gorm + 
