@@ -96,3 +96,19 @@ pull them all.
 docker-compose up -d
 ```
 
+| Containers    | Ports                    |
+|:--------------|:-------------------------|
+| golang        | 8000-8003, 9000-9003     |
+| dmt	          | 36789:36789, 36790:36790 |
+| etcd	         | 2379:2379                |
+| mysql	        | 3306:3306                |
+| mysql manage	 | 1000:80                  |
+| redis	        | 6379:6379                |
+| redis manage  | 2000:80                  |
+| prometheus	   | 3000:9090                |
+| grafana	      | 4000:3000                |
+| jaeger	       | 5000:16686               |
+
+| Services | Ports   |
+|:---------|:--------|
+| nginx    | 80      |
