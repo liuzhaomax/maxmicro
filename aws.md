@@ -4,6 +4,8 @@
 2. htop
 3. Docker
 4. Docker Compose
+5. Docker Network
+6. Images
 
 ## 1. Nginx
 ```
@@ -19,6 +21,7 @@ systemctl status nginx
 //查看端口占用
 ss -tnl
 ```
+配置文件路径：/etc/nginx/nginx.conf
 
 ## 2. htop
 资源管理工具用来查看CPU内存
@@ -58,3 +61,22 @@ sudo chmod +x /usr/local/bin/docker-compose
 //查看是否安装成功
 docker-compose -v
 ```
+
+## 5. Docker Network
+使用默认`bridge`
+
+## 6. Images
+
+| Service       | Images                        |
+|:--------------|:------------------------------|
+| DTM	          | yedf/dtm                      |
+| Etcd	         | bitnami/etcd                  |
+| Mysql	        | mysql:8.0                     |
+| Redis	        | redis:7.0                     |
+| Mysql Manage	 | phpmyadmin/phpmyadmin         |
+| Redis Manage	 | erikdubbelboer/phpredisadmin  |
+| Prometheus	   | bitnami/prometheus            |
+| Grafana	      | grafana/grafana               |
+| Jaeger	       | jaegertracing/all-in-one:1.28 |
+
+
