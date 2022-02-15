@@ -27,6 +27,7 @@ services:
     networks:
       - backend
     restart: always                      # 指定容器退出后的重启策略为始终重启
+    privileged: true
 
   etcd:                                  # 自定义容器名称
     build:
@@ -40,6 +41,7 @@ services:
     networks:
       - backend
     restart: always
+    privileged: true
 
   mysql:
     build:
@@ -90,6 +92,7 @@ services:
     networks:
       - backend
     restart: always
+    privileged: true
 
   redis-manage:
     build:
@@ -107,6 +110,7 @@ services:
     networks:
       - backend
     restart: always
+    privileged: true
 
   prometheus:
     build:
@@ -132,6 +136,7 @@ services:
     networks:
       - backend
     restart: always
+    privileged: true
 
   jaeger:
     build:
@@ -143,6 +148,7 @@ services:
     networks:
       - backend
     restart: always
+    privileged: true
 
   dtm:
     build:
@@ -160,3 +166,4 @@ services:
     networks:
       - backend
     restart: always
+    privileged: true
